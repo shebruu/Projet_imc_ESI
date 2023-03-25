@@ -1,0 +1,212 @@
+
+tbody tr {
+	border: 2px solid #6a8c9c;
+    padding: 8px;
+    margin-top: 16px;
+
+	
+     
+}
+th, td {
+    padding: 8px;
+}
+th {
+    background-color: bisque;
+}
+
+td {
+    border: 1px solid bisque
+}
+/*------------------------- body ---------------body-----------body------------body-----------------------  */
+body{
+	background-color:white;
+	margin: auto;
+	max-width: 785px;
+	font-family: Georgia, 'Times New Roman', Times, serif;		
+	border: 1px solid black; /*   pour faire les lignes noir autour*/
+	border-radius: 10px 5% / 20px 30px;
+	
+	
+
+	display: grid;
+	 grid-template-columns: auto 1fr;
+	 grid-template-rows: auto 1fr auto;
+	 grid-template-areas:
+	 "header header"
+	 "menu main"
+	 "footer footer";
+	 grid-gap: 4px;
+	
+
+}
+h3{
+	font-size: large;
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	
+}
+header {
+	grid-area: header;
+	text-align: center;
+
+	color: grey;
+	padding: 0.5em;
+	
+	text-shadow: 4px 3px 3px #00171F;
+	letter-spacing: 0.15em;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+
+	
+}
+
+/*---------------------------------------------cacher du contenu du calcul---------------------------*/
+ 
+	.hide{
+		display: none;
+	   
+	}
+	.tableau{
+		background-color: aqua;
+		
+	}
+	.tableaucaché{
+		display: none;
+		margin: 4px;
+		padding: 4px;
+	}
+	.button2 {
+	  position: inherit;
+		bottom: 35px;}
+	/*.hide p{
+		font-family: Arial, Helvetica, sans-serif, Courier, monospace;
+	}*/
+
+
+
+/*  -------------------- menu horizontal ----------------------------------------------------*/
+
+
+.navhorizontal{
+	display: inline-block;
+	flex-direction: row;
+	list-style-type: none;
+	grid-row-start: 1;
+	grid-column-start: 1;
+ 
+	grid-row-end: 2;
+	grid-column-end: 7;
+	letter-spacing: 0.15em;
+}
+
+nav{
+	grid-area: menu;
+	display: inline;
+	flex-direction: row;
+	list-style-type: none;
+	align-self: start;
+	list-style-type: none;
+	background-color: white;
+}
+
+.nav ul{
+display: flex;
+flex-direction: column; /* ici */
+list-style-type: none;
+background-color: rosybrown;
+grid-row-start: 1;
+	grid-column-start: 1;
+ 
+	grid-row-end: 2;
+	grid-column-end: 7;
+}
+code{
+text-align: end;
+}
+nav ul{
+	display: flex;
+	flex-direction: row;
+
+}
+nav ul li{
+	list-style-type: none;
+
+}
+a{
+	color: brown;
+
+}
+.nav li a {
+
+
+
+color: brown;
+padding: 8px 16px;
+list-style-type: none;
+}
+
+.nav li a:hover {
+background-color: brown;
+color: white;
+
+}
+
+
+
+
+main {
+	grid-area: main;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color: #00171F;
+
+}
+
+
+
+
+
+p{
+    font-family: cursive;
+    font-size: small;
+}
+
+
+
+
+.produit{
+	opacity: 0.6;
+    width: 180px;
+    border: 1px #00171F solid;
+    transition: opacity 1s ease-out;
+
+	opacity: 1;
+    transition: opacity 1s ease-out;
+
+
+}
+
+
+
+
+footer{
+	background-color: #9DB997;
+	grid-row-start: 4;
+	grid-column-start: 1;
+ 
+	grid-row-end: 5;
+	grid-column-end: 6;
+	grid-area:footer;
+	display: block;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	padding: 0.5em;
+    text-align: center;
+
+}
+footer .group, footer .name, footer .prof{
+	display: inline-block;
+	padding: 0 25px;
+	flex-direction: row;
+
+}
+
+
+

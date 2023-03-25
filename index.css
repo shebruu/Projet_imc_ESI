@@ -1,0 +1,58 @@
+body{
+    background-color:white;
+    margin: auto;
+    max-width: 785px;
+                
+    border: 1px solid black; /*   pour faire les lignes noir autour*/
+    border-radius: 10px 5% / 20px 30px; 
+  
+}
+p{
+    font-family: cursive;
+    font-size: small;
+}
+.titre{
+  text-align: center;
+  font-size: medium;
+}
+header{
+    grid-area: header;
+    
+    color: grey;
+    padding: 0.5em;
+    
+    text-shadow: 4px 3px 3px #00171F;
+    letter-spacing: 0.15em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+
+}
+.container{
+   
+    display: flexbox;
+    flex-direction: row;
+        margin-top: 32px;
+        display: flex;
+        
+        justify-content:center ;
+        text-decoration: none;
+      
+       
+      }
+      
+
+.sectıons{
+    border: 1px solid lightblue;
+    border-style: inset;
+    margin: 10px;
+    padding: 10px;
+    background-color: antiquewhite;
+   text-align: center;
+}
+.ımages{
+    height: 120px;
+   
+}
+
+
+
